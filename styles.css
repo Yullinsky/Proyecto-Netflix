@@ -5,16 +5,22 @@
     padding: 0;
     font-family: Montserrat;
     color: #fff;
+        max-width: 1920px;
 }
 
 html, body, nav, div {
-    margin: 0;
+    margin: auto;
     padding: 0;
-    height: 100%;
+    max-width: 1920px;
+
+}
+
+html {
+    background-color: #000;
 }
 
 header {
-    min-height: 100vh;
+    max-width: 1920px;
     background-image:linear-gradient(#000a,#000a), url(https://assets.nflxext.com/ffe/siteui/vlv3/6863f6e8-d419-414d-b5b9-7ef657e67ce4/web/MX-es-20250602-TRIFECTA-perspective_ea5e791c-94e8-4db9-ab92-c6e65f67bfa4_large.jpg);
     background-size: cover;
     position: relative;
@@ -26,8 +32,11 @@ header {
 
 body header {
     text-align: center;
-    width: 100%;
     z-index: 1;
+}
+
+section, footer {
+    max-width: 1350px;
 }
 
 .logo {
@@ -50,10 +59,13 @@ body header {
     border-radius: 5px;
     
     color: #fff;
-    background-color: rgb(229, 9, 20);
+    background-color: rgb(206, 8, 28);
     font-size: 0.8rem;
     font-weight: 600;
     text-decoration: none;
+}
+#Iniciar-sesion:hover {
+    background-color: rgb(185, 7, 25);
 }
 
 header div h2 {
@@ -78,6 +90,7 @@ header div p {
     padding: 19px 22px 19px 22px;
     margin-top: 24px;
     margin-right: 3px;
+    margin-bottom: 175px;
     font: 500 14px Montserrat, Arial, sans-serif;
     color: #ffff;
     cursor:pointer;
@@ -86,13 +99,169 @@ header div p {
 
 #Comenzar {
     width: 165px;
-    background-color: rgb(229, 9, 20);
+    background-color: rgb(206, 8, 28);
     border: transparent;
     border-radius: 5px;
     padding:18px 20px 18px 20px;
     margin-top: 24px;
+    margin-bottom: 175px;
     
     font: 500 16px Montserrat, Arial, sans-serif;
     cursor:pointer;
     vertical-align: middle;
+}
+
+#Comenzar:hover {
+    background-color: rgb(185, 7, 25);
+}
+
+#curva{
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(50% 500% at 50% -400%, rgba(64, 97, 231, 0.4)80%, #000 100%), #000;
+
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-width: 3px;
+    border-top: 3px solid #f35;
+}
+
+section#Segunda_sección {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+    padding-top: 20px;
+}
+div#Más_info {
+    margin: 0 auto;
+    height: 72px;
+    background: #f350 center;
+    width: 88%;
+    text-align: left;
+    vertical-align: center;
+    display: flex;
+    padding: 0;
+}
+
+div#Más_info:hover {
+    size: 112%;
+}
+
+div#Más_info img{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+
+#Texto_más_info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: radial-gradient(290% 500% at -100% -300%, rgba(60, 67, 133, 0.4)75%, #210e17 100%), #000;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius:  15px;
+    height: 100%;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+}
+
+#Texto_más_info:hover {
+    background: radial-gradient(290% 500% at -100% -300%, rgba(60, 67, 133, 0.4)75%, #210e17 100%), #000;
+    transform: scale(102%);
+    transition: all 0.2s ease-in-out;
+}
+
+
+#Texto_más_info p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #fff;
+}
+
+#Texto_más_info a {
+    background-color: #335;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+#Texto_más_info a:hover {
+    background-color: #30305a;
+}
+
+.Tendencias {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 75px;
+}
+
+
+img.Tendencias {
+    border-radius: 10px;
+    width: 16%;
+    height: auto;
+    margin: 20px;
+    margin-bottom: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+img.Tendencias:hover {
+    transform: scale(103%);
+    transition: all 0.2s ease-in-out;
+}
+
+.Más_motivos{
+    margin-left: 75px;
+}
+
+.Más_motivos span{
+    margin: 6px 12px 6px 0;
+    text-align: left;
+    background: radial-gradient(290% 500% at -100% -300%, rgba(60, 67, 133, 0.4)75%, #210e17 100%), #000;
+    padding: 10px;
+    border-radius: 15px;
+    width: 50%;
+    height: 200px;
+}
+
+.subtitulo{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.Más_motivos p {
+    font-size: 1em;
+    margin: 10px;
+}
+
+.Más_motivos h3 {
+    margin:10px;
+}
+
+
+footer {
+    background-color: #000;
+}
+
+.izquierda {
+    float: left;
+}
+.derecha {
+    float: right;
+}
+.fila {
+    display: flex;
+    justify-content: space-between;
 }
