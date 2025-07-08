@@ -12,7 +12,6 @@ html, body, nav, div {
     margin: auto;
     padding: 0;
     max-width: 1920px;
-
 }
 
 html {
@@ -44,6 +43,14 @@ h4 {
     color: white;
     font-size: 1.1em;
     padding: 20px;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
 }
 
 .logo {
